@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Netlify deployment: https://vibrant-varahamihira-4e0cdc.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
