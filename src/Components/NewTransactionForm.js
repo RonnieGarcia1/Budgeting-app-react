@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// import Transactions from "./Transactions"
 
 const NewTransactionForm = () => {
     const navigate = useNavigate();
@@ -29,6 +28,7 @@ const NewTransactionForm = () => {
     };
     return (
         <div className="New">
+            <h3>Add a new item</h3>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Date">Date</label>
                 <br/>

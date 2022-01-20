@@ -1,11 +1,10 @@
-import TransactionDetails from "../Components/TransactionDetails";
+import Transactions from "../Components/Transactions";
 
 
 const Home = () => {
     return (
         <div className="Home">
-            <h1>Bank Account Total: 133</h1>
-            <TransactionDetails />
+            <Transactions /> 
         </div>
     )
 };

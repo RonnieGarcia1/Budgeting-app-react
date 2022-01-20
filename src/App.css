@@ -6,3 +6,12 @@ body {
   color: white;
   margin: 50px;
 }
+
+.transactions-btn {
+    margin: 25px;
+}
+
+.transactions-2{
+  border: 2px white solid;
+  grid-template-columns: repeat(5fr, 1);
+}

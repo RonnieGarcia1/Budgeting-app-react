@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Transaction from "./Transaction";
+// import Transaction from "./Transaction";
 
-const API = process.env.React_APP_API_URL;
+const API = process.env.REACT_APP_API_URL;
 
 const Transactions = () => {
     const [transaction, setTransactions] = useState([]);
@@ -11,23 +11,27 @@ const Transactions = () => {
        axios.get(API + "/transactions")
          .then((res) => {
            setTransactions(res.data)
-            console.log(res.data);
-      }).catch((error) => {
-          throw error;
+        }).catch((error) => {
+            throw error;
         });
     },  []);
+        console.log(transaction) 
     return (
-        <div className="Transactions">
+        <div className="transactions-1">
             <section>
-                <table>
-                    <thead>
-                        <tbody>
-                            {transaction.map((transaction, index) => {
-                                return <Transaction key={index} transaction={transaction} index={index} />;
-                            })}
-                        </tbody>
-                    </thead>
-                </table>
+                {transaction.map((transaction, index) => {
+                    return (
+                        <div className="transactions-2">
+                            <br></br>
+                        <div><strong>Item Name:</strong>{transaction.item_name}</div>
+                        <div><strong>Date:</strong> {transaction.date}</div>
+                        <div><strong>From:</strong> {transaction.from}</div>
+                        <div><strong>Amount:</strong> {transaction.amount}</div>
+                        <div><strong>Category:</strong> {transaction.category}</div>
+                        <br></br>
+                        </div>
+                    )
+                })}
             </section>
         </div>
     );
