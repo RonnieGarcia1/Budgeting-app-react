@@ -1,21 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect, useNavigate, useState } from "react";
 import axios from "axios";
-// import Transaction from "./Transaction";
 
 const API = process.env.REACT_APP_API_URL;
 
+
 const Transactions = () => {
     const [transaction, setTransactions] = useState([]);
-
+    
     useEffect(() => {
-       axios.get(API + "/transactions")
-         .then((res) => {
-           setTransactions(res.data)
+        axios.get(API + "/transactions")
+        .then((res) => {
+            setTransactions(res.data)
         }).catch((error) => {
             throw error;
         });
     },  []);
-        console.log(transaction) 
+    
+    console.log(transaction) 
+
+
     return (
         <div className="transactions-1">
             <section>
@@ -29,6 +32,7 @@ const Transactions = () => {
                         <div><strong>Amount:</strong> {transaction.amount}</div>
                         <div><strong>Category:</strong> {transaction.category}</div>
                         <br></br>
+                        <button className="delete-btn">Delete</button>
                         </div>
                     )
                 })}
