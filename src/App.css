@@ -1,17 +1,49 @@
 body {
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(255, 255, 255);
 }
 .App {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 50px;
+  padding-left: 400px;
+  padding-right: 400px;
 }
 
-.transactions-btn {
+.back-to-home {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.transactions-btn{
     margin: 25px;
+    text-decoration: none;
 }
 
 .transactions-2{
-  border: 2px white solid;
-  grid-template-columns: repeat(5fr, 1);
+  border: 2px rgb(91, 91, 91) solid;
+  margin: 50px;
+  padding: 25px;
+  color: white;
+  background-color: rgb(21, 20, 35);
+}
+
+.transactions-2 p {
+  margin: 200px;
+  display: inline;
+  white-space: nowrap;
+}
+.details-2 {
+  border: 2px rgb(91, 91, 91) solid;
+  margin: 50px;
+  padding: 25px;
+  color: white;
+  background-color: rgb(21, 20, 35);
+}
+
+.details-2 p {
+  border: 1px solid gray;
+}
+.back-to-home {
+  margin-right: 700px;
 }

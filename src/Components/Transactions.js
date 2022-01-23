@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -17,22 +18,16 @@ const Transactions = () => {
     },  []);
     
     console.log(transaction) 
-
-
+    
     return (
         <div className="transactions-1">
             <section>
                 {transaction.map((transaction, index) => {
                     return (
                         <div className="transactions-2">
-                            <br></br>
-                        <div><strong>Item Name:</strong>{transaction.item_name}</div>
-                        <div><strong>Date:</strong> {transaction.date}</div>
-                        <div><strong>From:</strong> {transaction.from}</div>
-                        <div><strong>Amount:</strong> {transaction.amount}</div>
-                        <div><strong>Category:</strong> {transaction.category}</div>
-                        <br></br>
-                        <button className="delete-btn">Delete</button>
+                        <p>{transaction.date}</p>
+                        <Link className="transaction-details" to="/transactions/details">{transaction.category}</Link>
+                        <p>{transaction.amount}</p>
                         </div>
                     )
                 })}

@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams,} from "react-router-dom";
 import axios from "axios";
 
 const TransactionDetails = () => {
-    const navigate = useNavigate();
     const API = process.env.REACT_APP_API_URL;
     const[transaction, setTransaction] = useState([]);
     const { index } = useParams();

@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 export default function NavBar() {
   return (
     <nav>
       
-      <Link to="/">Budget App</Link>
-      <br></br>
-      <button className="transactions-btn">
+      <Link className="back-to-home" to="/">Budget App</Link>
+      <Button variant="outlined" className="transactions-btn">
         <Link to="/transactions/new">NEW TRANSACTION</Link>
-      </button>
+      </Button>
     </nav>
   );
 }
