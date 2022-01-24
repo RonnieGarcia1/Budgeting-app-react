@@ -73,12 +73,7 @@ input {
 
 }
 
-.details :hover {
-  color: white;
-}
-
 .details-2 {
-  /* border: 2px rgb(91, 91, 91) solid; */
   margin: 25px;
   padding: 25px;
   color: white;
@@ -91,7 +86,6 @@ input {
   padding: 25px;
   margin: 10px;
   white-space: nowrap;
-  /* border: 1px solid gray; */
 }
 .back-to-home {
   margin-right: 700px;
@@ -107,4 +101,8 @@ input {
 .New form{
   text-align: center;
   background-color: rgb(15, 21, 40);
+}
+
+strong {
+  color: rgb(102, 159, 251) 
 }

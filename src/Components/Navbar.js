@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav className="nav-bar">
       <Link className="back-to-home" to="/">
-        <strong>Budget App</strong>
+        <strong>Budget App®</strong>
       </Link>
 
       <Button variant="outlined" className="transactions-btn">

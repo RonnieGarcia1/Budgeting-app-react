@@ -26,12 +26,11 @@ const Details = () => {
                 {details.map((details, index) => {
                     return (
                         <div className="details-2">
-                            <br></br>
-                        <p>{details.date}, 2022</p>
+                           <strong>Summary</strong>
+                        <p><strong>Date: </strong>{details.date}, 2022</p>
                         <Link className="details" to="/transactions/details">{details.category}</Link>
-                        <p>{details.from}</p>
-                        <p>-${details.amount}.00</p>
-                        <p>{details.category}</p>
+                        <p><strong>From: </strong> {details.from}</p>
+                        <p><strong>Amount:</strong> -${details.amount}.00</p>
                         <Button variant="outlined">Delete</Button>
                         </div>
                     )
