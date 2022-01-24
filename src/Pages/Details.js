@@ -27,10 +27,10 @@ const Details = () => {
                     return (
                         <div className="details-2">
                             <br></br>
-                        <p>{details.date}</p>
+                        <p>{details.date}, 2022</p>
                         <Link className="details" to="/transactions/details">{details.category}</Link>
                         <p>{details.from}</p>
-                        <p>{details.amount}</p>
+                        <p>-${details.amount}.00</p>
                         <p>{details.category}</p>
                         <Button variant="outlined">Delete</Button>
                         </div>
