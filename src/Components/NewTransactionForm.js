@@ -81,7 +81,7 @@ const NewTransactionForm = () => {
                 />
                 <br />
                 <br/>
-                <input type="submit" value="CREATE NEW ITEM" />
+                <input type="submit" value="Create" /> 
             </form>
         </div>
     )

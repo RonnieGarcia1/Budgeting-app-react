@@ -12,9 +12,24 @@ const TransactionDetails = () => {
         .then((res) => setTransaction(res.data))
 
     }, [API, index])
+
+    console.log(transaction);
+
+    let bank = 0;
+    const bankAccount = () => {
+        for(let transactions of transaction){
+            console.log(Number(transactions.amount))
+            bank+=Number(transactions.amount)
+            console.log(bank)
+        }
+    }
+    bankAccount()
     return (
-        <div>
-        <h1>Bank Account Total: number</h1>
+        <div className="budget-total">
+                Budget total:
+                <p className="budget-amount">
+                    ${bank}.00
+                </p>
         </div>
     );
 }

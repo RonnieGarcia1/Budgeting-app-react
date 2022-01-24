@@ -18,6 +18,10 @@ input {
   color: white;
 }
 
+strong {
+  color: rgb(102, 159, 251) 
+}
+
 .back-to-home {
   color: white;
     text-decoration: none;
@@ -103,6 +107,10 @@ input {
   background-color: rgb(15, 21, 40);
 }
 
-strong {
-  color: rgb(102, 159, 251) 
+.budget-total {
+  color: white;
+}
+
+.budget-amount {
+  color: green;
 }
