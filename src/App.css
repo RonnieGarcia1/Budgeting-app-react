@@ -8,6 +8,7 @@ body {
 }
 
 .nav-bar {
+  position: sticky;
   text-align: center;
   white-space: nowrap;
   margin: 50px;
@@ -21,6 +22,11 @@ input {
 
 strong {
   color: rgb(102, 159, 251) 
+}
+
+.home{
+  width: 100%;
+  text-align: center;
 }
 
 .back-to-home {
@@ -48,11 +54,12 @@ strong {
 
 .transactions-1 {
   text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
 }
 
 .transactions-2{
+  position: sticky;
   display: inline-block;
   white-space: nowrap;
   text-align: center;

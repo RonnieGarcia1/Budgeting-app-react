@@ -14,8 +14,6 @@ export default function NavBar() {
       <Button variant="outlined" className="transactions-btn">
         <Link className="new-transaction-btn" to="/transactions/new">NEW TRANSACTION</Link>
       </Button>
-      <div className="bank-account-total">
-      </div>
       </span>
     </nav>
   );
