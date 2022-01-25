@@ -53,9 +53,10 @@ strong {
 }
 
 .transactions-2{
+  display: inline-block;
   white-space: nowrap;
   text-align: center;
-  margin: 100px;
+  margin: 50px;
   color: white;
   background-color: rgb(20, 17, 25);
   border: 1px solid rgb(102, 159, 251) ;
