@@ -8,6 +8,7 @@ body {
 }
 
 .nav-bar {
+  text-align: center;
   white-space: nowrap;
   margin: 50px;
 }
@@ -24,9 +25,11 @@ strong {
 
 .back-to-home {
   color: white;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 50px;
+}
+
+.back-to-home img {
+  text-align: center;
+  width: 200px;
 }
 
 .transactions-btn{
@@ -40,7 +43,7 @@ strong {
   text-decoration: none;
   color: rgb(9, 159, 246);
   padding: 10px;
-
+  text-align: center;
 }
 
 .transactions-1 {
@@ -51,21 +54,21 @@ strong {
 
 .transactions-2{
   margin: 50px;
-  padding: 0px;
   color: white;
   background-color: rgb(20, 17, 25);
   border: 1px solid rgb(102, 159, 251) ;
 }
 
 .transaction-details{
-  font-size: 30px;
+  font-size: 18px;
   color: green;
-  padding: 20px;
+  padding: 100px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .transactions-2 p {
-  font-size: 30px;
+  font-size: 20px;
   margin: 60px;
   white-space: nowrap;
   display: inline-block;
@@ -91,10 +94,10 @@ strong {
   margin: 10px;
   white-space: nowrap;
 }
-.back-to-home {
+/* .back-to-home {
   margin-right: 700px;
   white-space: nowrap;
-}
+} */
 .New {
   text-align: center;
   color: white;
@@ -109,9 +112,12 @@ strong {
 }
 
 .budget-total {
+  text-align: center;
+  font-weight: 400;
   color: white;
 }
 
 .budget-amount {
+  text-align: center;
   color: green;
 }

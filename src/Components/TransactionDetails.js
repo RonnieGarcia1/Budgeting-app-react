@@ -26,9 +26,8 @@ const TransactionDetails = () => {
     bankAccount()
     return (
         <div className="budget-total">
-                Budget total:
                 <p className="budget-amount">
-                    ${bank}.00
+                <strong>Budget total:</strong> ${bank}.00
                 </p>
         </div>
     );
