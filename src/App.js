@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import NavBar from "./Components/Navbar";
 import Index from "./Pages/Index.js";
 import New from "./Pages/New.js";
-import Details from "./Pages/Details.js";
+import Details from "./Pages/Details.js"
 import FourOFour from "./Pages/Four0Four.js";
 
 const App = () => {

@@ -31,7 +31,6 @@ const NewTransactionForm = () => {
             <h3>Add a new item</h3>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Date">Date</label>
-                <br/>
                 <input
                     id="date"
                     value={transactions.date}
@@ -39,9 +38,7 @@ const NewTransactionForm = () => {
                     onChange={handleTextChange}
                     placeholder="Date of transaction" required
                 />
-                <br/>
                 <label htmlFor="ItemName">Item Name</label>
-                <br/>
                 <input
                     id="item_name"
                     value={transactions.item_name}
@@ -49,19 +46,15 @@ const NewTransactionForm = () => {
                     onChange={handleTextChange}
                     placeholder="Name of item" required
                 />
-                <br/>
                 <label htmlFor="Amount">Amount</label>
-                <br/>
                 <input
                     id="amount"
                     value={transactions.amount}
                     type="number"
                     onChange={handleTextChange}
-                    placeholder="Amount" required
+                    placeholder="amount" required
                 />
-                <br/>
                 <label htmlFor="From">From</label>
-                <br/>
                 <input
                     id="from"
                     value={transactions.from}
@@ -69,9 +62,7 @@ const NewTransactionForm = () => {
                     onChange={handleTextChange}
                     placeholder="From" required
                 />
-                <br/>
                 <label htmlFor="Category">Category</label>
-                <br/>
                 <input
                     id="category"
                     value={transactions.category}
@@ -79,8 +70,6 @@ const NewTransactionForm = () => {
                     onChange={handleTextChange}
                     placeholder="enter a category" required
                 />
-                <br />
-                <br/>
                 <input type="submit" value="Create" /> 
             </form>
         </div>
