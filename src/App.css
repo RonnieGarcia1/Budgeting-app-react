@@ -71,7 +71,7 @@ strong {
 
 .transaction-details{
   font-size: 18px;
-  color: green;
+  color: rgb(101, 101, 101);
   padding: 100px;
   text-decoration: none;
   white-space: nowrap;
