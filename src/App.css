@@ -29,7 +29,7 @@ strong {
 
 .back-to-home img {
   text-align: center;
-  width: 200px;
+  width: 100px;
 }
 
 .transactions-btn{
@@ -96,10 +96,7 @@ strong {
   margin: 10px;
   white-space: nowrap;
 }
-/* .back-to-home {
-  margin-right: 700px;
-  white-space: nowrap;
-} */
+
 .New {
   text-align: center;
   color: white;
@@ -122,4 +119,10 @@ strong {
 .budget-amount {
   text-align: center;
   color: green;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-weight: 10px;
 }

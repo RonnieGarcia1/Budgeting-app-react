@@ -7,6 +7,7 @@ import Index from "./Pages/Index.js";
 import New from "./Pages/New.js";
 import Details from "./Pages/Details.js"
 import FourOFour from "./Pages/Four0Four.js";
+import BasicModal from './Components/BasicModal';
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
         </Routes>
         </main>
       </Router>
+      <footer className="footer">
+        <BasicModal />
+      </footer>
     </div>
   );
 }
