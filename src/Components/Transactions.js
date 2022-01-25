@@ -25,7 +25,7 @@ const Transactions = () => {
                 {transaction.map((transaction, index) => {
                     return (
                         <div className="transactions-2">
-                        <p>{transaction.date} , 2022</p>
+                        <p>{transaction.date}</p>
                         <Link className="transaction-details" to="/transactions/details">{transaction.category}</Link>
                         <p>-${transaction.amount}.00</p>
                         </div>
