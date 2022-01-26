@@ -17,20 +17,16 @@ const Transactions = () => {
         });
     },  []);
     
-    console.log(transaction) 
+    console.log(transaction)
     
     return (
         <div className="transactions-1">
             <section>
-                {transaction.map((transaction, index) => {
-                    return (
-                        <div className="transactions-2">
-                        <p>{transaction.date}</p>
-                        <Link className="transaction-details" to="/transactions/details">{transaction.category}</Link>
-                        <p>-${transaction.amount}.00</p>
-                        </div>
-                    )
-                })}
+                <div className="transactions-2">
+                <p>{transaction.date}</p>
+                <Link className="transaction-details" to="/transactions/details">{transaction.category}</Link>
+                <p>-${transaction.amount}.00</p>
+                </div>
             </section>
         </div>
     );

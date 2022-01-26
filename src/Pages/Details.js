@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 
 const API = process.env.REACT_APP_API_URL;
@@ -17,13 +16,13 @@ const Details = () => {
             throw error;
         });
     },  []);
-    
+
+    const handleDelete = () => {
+       console.log("trigger");
+    }
     console.log(details) 
-    
     return (
         <div className="transactions-1">
-
-            
             <section>
                 {details.map((details, index) => {
                     return (
@@ -31,11 +30,11 @@ const Details = () => {
                            <strong>Summary</strong>
                            <br></br>
                            <br></br>
-                        <Link className="details" to="/transactions/">Dashboard</Link>
+                        <p><strong>Item:  </strong>{details.item_name}</p>
                         <p><strong>Date: </strong>{details.date}, 2022</p>
                         <p><strong>From: </strong> {details.from}</p>
-                        <p><strong>Amount:</strong> -${details.amount}.00</p>
-                        <Button variant="outlined">Delete</Button>
+                        <p><strong>Amount:</strong> - ${details.amount}.00</p>
+                        <Button onClick={handleDelete}variant="outlined">Delete</Button>
                         </div>
                     )
                 })}

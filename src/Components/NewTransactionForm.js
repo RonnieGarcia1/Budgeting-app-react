@@ -19,9 +19,9 @@ const NewTransactionForm = () => {
 
     const addTransactions = (newTransaction) => {
         axios.post(`${API}/transactions`, newTransaction)
-        .then(() => navigate("/transactions"))
+        .then(() => navigate("/"))
     }
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         addTransactions(transactions)

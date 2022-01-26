@@ -8,7 +8,7 @@ const TransactionDetails = () => {
     const { index } = useParams();
 
     useEffect(() => {
-        axios.get(API+"/transactions/")
+        axios.get(API+"/transactions")
         .then((res) => setTransaction(res.data))
 
     }, [API, index])

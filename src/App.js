@@ -8,18 +8,20 @@ import New from "./Pages/New.js";
 import Details from "./Pages/Details.js"
 import FourOFour from "./Pages/Four0Four.js";
 import BasicModal from './Components/BasicModal';
+import BudgetTotal from './Components/BudgetTotal'
 
 const App = () => {
   return (
     <div className="App">
       <Router>
         <NavBar />
+        <BudgetTotal />
         <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Details />} />
           <Route path="/transactions" element={<Index />} />
           <Route path="/transactions/new" element={<New />} />
-          <Route path="/transactions/details" element= {<Details />} />
+          <Route path="/transactions/details" element= {<Home />} />
           <Route path="*" element={<FourOFour />} />
         </Routes>
         </main>

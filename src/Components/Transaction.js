@@ -1,12 +1,11 @@
-import TransactionDetails from "../Components/TransactionDetails";
+// import BudgetTotal from "./BudgetTotal";
 
-const Transaction = () => {
-    return(
-        <div>
-            <TransactionDetails />
-            <div>Missing Data</div>
-        </div>
-    )
-};
+// const Transaction = () => {
+//     return(
+//         <div>
+//             <TransactionDetails />
+//         </div>
+//     )
+// };
 
-export default Transaction;
+// export default Transaction;
