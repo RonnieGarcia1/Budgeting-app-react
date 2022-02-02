@@ -29,15 +29,18 @@ function ShowOneTransaction(){
         });
 
     }
-
             return(
                 <div>
+                    <div className="details-2">
                     <p><strong>Item:  </strong>{transaction.item_name}</p>
                     <p><strong>Date: </strong>{transaction.date}, 2022</p>
                     <p><strong>From: </strong> {transaction.from}</p>
                     <p><strong>Amount:</strong> - ${transaction.amount}.00</p>
+                    <p><strong>Category:</strong> {transaction.category}</p>
+
                     <Button variant="outlined" onClick={handleDelete} >Delete</Button>
                     <Button variant="outlined" component={Link} to={`/transactions/${index}/edit`}>Edit</Button>
+                    </div>
 
                 </div>
     )
