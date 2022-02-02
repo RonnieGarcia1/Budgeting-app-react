@@ -18,7 +18,7 @@ function ShowOneTransaction(){
         }).catch((error) => {
             throw error;
         });
-    },  []);
+    },  );
 
     const handleDelete = () => {
         axios.delete(`${API}/transactions/${index}`)
