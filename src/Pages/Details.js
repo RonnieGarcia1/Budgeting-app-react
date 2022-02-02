@@ -18,7 +18,6 @@ const Details = () => {
         });
     },  []);
 
-    console.log(details) 
     return (
         <div className="transactions-1">
             <section>
@@ -32,7 +31,7 @@ const Details = () => {
                            <br></br>
                         <p><strong>Date: </strong>{details.date}, 2022</p>
                         <p><strong>From: </strong> {details.from}</p>
-                        <p><strong>Amount:</strong> - ${details.amount}.00</p>
+                        <p><strong>Amount:</strong>  ${details.amount}.00</p>
                         </div>
                         </Link>
                     )

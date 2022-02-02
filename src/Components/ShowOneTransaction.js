@@ -38,8 +38,10 @@ function ShowOneTransaction(){
                     <p><strong>Amount:</strong> - ${transaction.amount}.00</p>
                     <p><strong>Category:</strong> {transaction.category}</p>
 
-                    <Button variant="outlined" onClick={handleDelete} >Delete</Button>
                     <Button variant="outlined" component={Link} to={`/transactions/${index}/edit`}>Edit</Button>
+                    <br></br>
+                    <br></br>
+                    <Button variant="outlined" onClick={handleDelete} >Delete</Button>
                     </div>
 
                 </div>
