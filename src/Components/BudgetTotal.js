@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams,} from "react-router-dom";
 import axios from "axios";
 
-const TransactionDetails = () => {
+function TransactionDetails (){
     const API = process.env.REACT_APP_API_URL;
     const[transaction, setTransaction] = useState([]);
     const { index } = useParams();
@@ -25,10 +25,11 @@ const TransactionDetails = () => {
     }
     bankAccount()
     return (
+
         <div className="budget-total">
-                <p className="budget-amount">
-                <strong>Budget total:</strong> ${bank}.00
-                </p>
+            <p className="budget-amount">
+            <strong>Budget total:</strong> ${bank}.00
+            </p>
         </div>
     );
 }

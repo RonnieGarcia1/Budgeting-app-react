@@ -4,11 +4,11 @@ import {  BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/Navbar";
 import New from "./Pages/New.js";
 import Details from "./Pages/Details.js"
+import ShowOne from './Pages/ShowOne';
+import Edit from './Pages/Edit';
 import FourOFour from "./Pages/Four0Four.js";
 import BasicModal from './Components/BasicModal';
 import BudgetTotal from './Components/BudgetTotal'
-import ShowOne from './Pages/ShowOne';
-import Edit from './Pages/Edit';
 
 const App = () => {
   return (

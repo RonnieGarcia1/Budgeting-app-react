@@ -21,7 +21,7 @@ function EditTransactions(){
         }).catch((error) => {
             throw error;
         });
-    },  );
+    },  []);
 
     const handleTextChange = (event) => {
         setTransaction({ ...transaction, [event.target.id]: event.target.value })

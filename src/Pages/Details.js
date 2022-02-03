@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-
 const API = process.env.REACT_APP_API_URL;
-
 
 const Details = () => {
     const [details, setDetails] = useState([]);
@@ -25,7 +23,6 @@ const Details = () => {
                     return (
                         <Link to={`/transactions/${index}`}>
                         <div className="details-2">
-                            
                            <strong>Summary</strong>
                            <br></br>
                            <br></br>
